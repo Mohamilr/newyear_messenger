@@ -7,7 +7,7 @@
         "email": ""
     }
     },
-    "host": "https://seamless-mailer.herokuapp.com",
+    "host": "seamless-mailer.herokuapp.com",
     "basePath": "/api/v1",
     "schemes": [
       "https"
@@ -54,8 +54,12 @@
           ],
           "responses": {
             "200": {
-              "description": "",
+              "description": "message created",
               "headers": {}
+            },
+            "400": {
+                "description": "some errors",
+                "headers": {}
             }
           }
         }
@@ -75,7 +79,7 @@
           "parameters": [],
           "responses": {
             "200": {
-              "description": "",
+              "description": "messages fetched",
               "headers": {}
             }
           }
